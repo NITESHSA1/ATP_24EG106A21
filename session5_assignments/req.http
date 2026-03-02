@@ -1,0 +1,33 @@
+###read all users
+GET http://localhost:3200/test
+
+###read a user by id
+GET http://localhost:3200/test225
+
+### create new user
+POST http://localhost:3200/test
+content-type:application/json
+
+{
+  "productid":111,
+  "name":"jersey butter milk",
+  "brand":"jersey",
+  "price":40
+
+}
+
+###to update 
+PUT http://localhost:3200/test
+content-type:application/json
+
+{
+    
+  "productid":111,
+  "name":"jersey butter milk",
+  "brand":"jersey",
+  "price":40
+
+}
+
+###delete a user by 21
+DELETE http://localhost:3200/test/111

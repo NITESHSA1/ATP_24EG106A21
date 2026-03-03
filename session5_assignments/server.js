@@ -1,130 +1,33 @@
-/*
-//create http srver
-import exp from 'express'
-const app=exp()//express application returns//exp internally contain the http server + many things
-//port number to listen clinet request
-const port=3200
-app.listen(port,())=>console.log(`server is listening to port ${port}`))//assign port number to http server
-
-
-//create api
-// application program interface
-//(rest api)-representationl state trnasfer
-//route structure
-//app.MEHOD(path,request handler)
-//===========request,response
-//domain (http://localhost:3200/users)
-//route to handle get req of client
-
-
-*/// create http server
-/*
-import express from 'express';
-
-const app = express(); 
-
-// Middleware to parse JSON data from request bodies (essential for POST/PUT)
-app.use(express.json());
-
-const port = 3200;
-
-
-//TEST DATA
-let users=[]
-// route to handle GET request
-app.get('/users', (req, res) => {
-    //read all the users
-    res.json({message:"all users",Payload:users})
-
-});
-app.get('/users/:id', (req, res) => {
-    //get id from url parameter
-    console.log(req.params)
-    let idofurl=Number(req.params.id)
-    //findindex of user
-    let index=users.find((user)=>user.id==idofurl)
-    if(index==undefined)
-    {
-        return res.json({message:"user not found to delete"})
-    }
-    res.json({message:"yes user is finded "})
-}
-)
-
-// route to handle POST request
-app.post('/users', (req, res) => {
-    //get user from client
-    const newuser=req.body
-    users.push(newuser)
-    //send req
-    res.json({message:"user created"})
-    
-});
-
-// route to handle PUT request
-app.put('/users', (req, res) => {
-    //get modified user from  req{}
-    let modifieduser=req.body;
-    //get index of of exisiting user in user body
-    let index=users.findIndex((user)=>user.id==modifieduser.id)
-    //if user not found
-    if(index==-1)
-    {
-        return res.json({message:"user not found"})
-    }
-    //update user with index
-    users.splice(index,1,modifieduser)
-
-    //send res
-    res.json({message:"user updated"})
-
-   
-});
-
-// route to handle DELETE request
-app.delete('/users/:id', (req, res) => {
-    //get id from url parameter
-    console.log(req.params)
-    let idofurl=Number(req.params.id)
-    //findindex of user
-    let index=users.findIndex((user)=>user.id==idofurl)
-    if(index==-1)
-    {
-        return res.json({message:"user not found to delete"})
-    }
-    //delete index by user
-    users.splice(index,1)
-
-    //respo
-    res.json({message:"user found deleted"})
-})
-   
-
-// Start the server
-app.listen(port, () => {
-    console.log(`Server is listening on port ${port}`);
-});
-//psot and put request should  to the API as body of the req object
-//get and delete request do not support body of the request
-//so that these two requests can send data through the end point
-//complete
-*/
 import express from 'express'
 const product=express()
 const port=3200
 product.use(express.json())
 
-//test data
+//TEST DATA 
 const test=[]
+//CHECKING THE HTTP IS RUNNING OR NOT
 product.listen(port,()=>{
     console.log("port is runnig successfully on the port 3200")
 })
-//routes for get
+//ROUTES 
+//TO READ ALL THE PRODUCTS
 product.get('/test',(req,res)=>
 {
     res.json({message:"all products ",products:test})
 })
+//TO READ THE PRODUCT WITH SPECIFIC BRAND
+product.get('/test/:brand',(req,res)=>{
+    console.log(req.params)
+    let reqbrand=req.params.brand
+    let brands=test.find((finbrand)=>finbrand.brand==reqbrand)
+    if(brands==undefined)
+    {
+        return res.json({message:"specific brand is not found your searching"})
+    }
+    res.json({message:`the specific brand ${reqbrand} your searching is found`})
+})
 
+//TO INSERT THE PRODUCT
 product.post('/test',(req,res)=>
 {
     const clientreq=req.body
@@ -132,6 +35,7 @@ product.post('/test',(req,res)=>
     res.json({message:"product is added"})
 })
 
+//TO UPDATE THE PRODUCT
 product.put('/test',(req,res)=>{
 
     let clientupreq=req.body
@@ -144,7 +48,7 @@ product.put('/test',(req,res)=>{
     res.json({message:"updated the product successfully"})
  
 })
-
+//TO DELETE THE PRODUCT
 product.delete('/test/:productid',(req,res)=>
 {
     

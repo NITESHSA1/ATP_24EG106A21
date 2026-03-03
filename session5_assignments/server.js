@@ -145,33 +145,19 @@ product.put('/test',(req,res)=>{
  
 })
 
-product.delete('/test/:id',(req,res)=>
+product.delete('/test/:productid',(req,res)=>
 {
-    /*
-    let reqnum=Number(req.params.id)
-    let proindex=test.findIndex((tester)=>tester.id==reqnum)
+    
+    let reqnum=Number(req.params.productid)
+    let proindex=test.findIndex((tester)=>tester.productid==reqnum)
     if(proindex==-1)
     {
         return res.json({message:"NO PRODUCT TO DELETE"})
     }
     test.splice(proindex,1)
     res.json({message:"product is deleted successfully"})
-    */
-   product.delete('/users/:id', (req, res) => {
-    //get id from url parameter
-    console.log(req.params)
-    let idofurl=Number(req.params.id)
-    //findindex of user
-    let index=test.findIndex((user)=>user.id==idofurl)
-    if(index==-1)
-    {
-        return res.json({message:"user not found to delete"})
-    }
-    //delete index by user
-    test.splice(index,1)
-
-    //respo
-    res.json({message:"user found deleted"})
+    
+  
 })
    
 })

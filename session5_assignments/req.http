@@ -2,7 +2,7 @@
 GET http://localhost:3200/test
 
 ###read a user by brand
-GET http://localhost:3200/test/111
+GET http://localhost:3200/test/jsersey
 
 ### create new product
 POST http://localhost:3200/test

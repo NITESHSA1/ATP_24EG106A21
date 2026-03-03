@@ -1,10 +1,10 @@
-###read all users
+###read all products
 GET http://localhost:3200/test
 
-###read a user by id
-GET http://localhost:3200/test225
+###read a user by brand
+GET http://localhost:3200/test/111
 
-### create new user
+### create new product
 POST http://localhost:3200/test
 content-type:application/json
 
@@ -23,11 +23,11 @@ content-type:application/json
 {
     
   "productid":111,
-  "name":"jersey butter milk",
+  "name":"jersey milk",
   "brand":"jersey",
   "price":40
 
 }
 
-###delete a user by 21
+###delete a user by 111
 DELETE http://localhost:3200/test/111

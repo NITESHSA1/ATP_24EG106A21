@@ -1,0 +1,30 @@
+### GET All Products
+GET http://localhost:3200/api/test
+
+### POST Add a Product
+POST http://localhost:3200/api/test
+Content-Type: application/json
+
+{
+    "id": 1,
+    "productid": 101,
+    "brand": "Nike",
+    "name": "Air Max"
+}
+
+### GET Specific Brand
+GET http://localhost:3200/api/test/Nike
+
+### PUT Update Product
+PUT http://localhost:3200/api/test
+Content-Type: application/json
+
+{
+    "id": 1,
+    "productid": 101,
+    "brand": "Nike",
+    "name": "Air Max Pro"
+}
+
+### DELETE Product
+DELETE http://localhost:3200/api/test/101

@@ -1,0 +1,33 @@
+
+### Get All Users
+GET http://localhost:4000/user-api/users
+
+
+### get user buy id
+GET  http://localhost:4000/user-api/users/69aba575890e81843ea05150
+
+### Create a New User
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "productid":211,
+    "productname":"JERSEY MILK",
+    "price":13000,
+    "brand":"JERSEY"
+
+
+}
+###
+Put http://localhost:4000/user-api/users/69aba3b22fa3f6f3f33221d8
+Content-Type: application/json
+
+{
+    "productid":211,
+    "productname":"JERSEY MILK",
+    "price":13500,
+    "brand":"JERSEY"
+}
+
+###
+DELETE http://localhost:4000/user-api/users/69abc58893e47b14d77dd24a

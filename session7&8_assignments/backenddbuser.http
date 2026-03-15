@@ -1,0 +1,41 @@
+### 1. Create a New User (Register)
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "username": "NITESH",
+    "password": "@NARGVS",
+    "email": "niteshgujjari123@gmail.com",
+    "age": 21
+}
+
+### 2. Login (This will set the 'token' Cookie in your client)
+POST http://localhost:4000/user-api/users/auth
+Content-Type: application/json
+
+{
+    "email": "niteshgujjari123@gmail.com",
+    "password": "@NARGVS"
+}
+
+### 3. Get All Users (Requires Login)
+# Note: If using VS Code REST Client, it handles cookies automatically after Login
+GET http://localhost:4000/user-api/users
+Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5pdGVzaGd1amphcmkxMjNAZ21haWwuY29tIiwiaWF0IjoxNzcyODc4Mzg4LCJleHAiOjE3NzI4Nzg0MDh9.KKoImaqr-QO8T5ucle3MTHXusZP6RynBHymmpCbnNMM; Path=/; HttpOnly; SameSite=Lax
+
+### 4. Get User by Object ID
+# Replace the ID below with a real one from your database
+GET http://localhost:4000/user-api/users/65e1a2b3c4d5e6f7a8b9c0d1
+
+### 5. Update User by ID
+PUT http://localhost:4000/user-api/users/65e1a2b3c4d5e6f7a8b9c0d1
+Content-Type: application/json
+
+{
+    "username": "NITESH_UPDATED",
+    "email": "niteshgujjari123@gmail.com",
+    "age": 22
+}
+
+### 6. Delete User by ID
+DELETE http://localhost:4000/user-api/users/69abfa06179c850fc7c70dea

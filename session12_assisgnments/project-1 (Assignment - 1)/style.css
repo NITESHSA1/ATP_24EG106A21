@@ -1,0 +1,95 @@
+/* 
+# font size units!
+em - font size of parent element! ex: 10rem -> root size(font size) * 10 
+rem - font size of root element!
+
+# view port units vw, vh
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
+
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Google Sans Flex", sans-serif;
+}
+
+.container {
+  margin: 25px, 100px;
+  padding: 50px;
+  background-color: palevioletred;
+}
+main h4 {
+  margin-left: 105px;
+  color: black;
+  text-size-adjust: 55px;
+}
+.cards {
+
+  display: flex;
+  justify-content: center;
+  margin: 25px 100px;
+  text-align: center;
+  background-color: pink;
+  justify-content: space-around;
+}
+section button {
+  height: 30px;
+  width: 75px;
+  float: left;
+}
+.cards img {
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+.cards section {
+  justify-content: center;
+}
+
+nav {
+  height: 67px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #e2e2e2;
+}
+
+nav ul {
+  width: 350px;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+.website-name {
+  width: 150px;
+  display: flex;
+}
+
+.search-box {
+  height: 30px;
+  width: 175px;
+}
+.search-btn {
+  height: 30px;
+  width: 75px;
+}
+
+main h1,
+h3 {
+  text-align: center;
+}
+footer {
+  display: flex;
+  margin: 25px, 100px;
+  background-color: grey;
+}
+footer section {
+  margin: 20px;
+}

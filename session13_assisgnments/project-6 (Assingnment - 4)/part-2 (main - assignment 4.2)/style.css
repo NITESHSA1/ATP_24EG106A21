@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.emp-class {
+    width: 500px;
+    margin: auto;
+    box-shadow: 1px 1px 30px gray;
+    margin-top: 200px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.lin {
+    width: 50%;
+    margin-bottom: 30px;
+    border-radius: 50%;
+}
+
+button {
+    border: none;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
+    color: rebeccapurple;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.link {
+    position: relative;
+    top: 130px;
+
+    width: 50%;
+    margin-bottom: 30px;
+    mix-blend-mode:color-burn;
+
+    border-width: 2px;
+}
+
+.git {
+    position: relative;
+    left: 200px;
+    top: -90px;
+    width: 160px;
+}

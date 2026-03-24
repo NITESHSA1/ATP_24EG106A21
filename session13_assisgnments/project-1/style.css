@@ -1,0 +1,30 @@
+/* '*' is a universal selector used to apply styles for all elements! */
+/* reset */
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* h1 {
+  border: 5px solid rgba(255, 98, 0, 0.834);
+  text-align: center;
+  padding: 100px;
+  width: 500px;
+  font-size: 50px;
+  font-family: "Google Sans Flex", sans-serif;
+} */
+
+.heading1 {
+    background: palegoldenrod;
+    padding: 20px;
+
+}
+
+.heading2 {
+    background: firebrick;
+    padding: 20px;
+
+}

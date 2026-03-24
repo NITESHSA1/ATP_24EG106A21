@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+img {
+    position: absolute;
+    left: 95%;
+    top: 91%;
+}

@@ -1,0 +1,171 @@
+# Session 6 Assignments – REST API Development with Node.js
+
+##  Overview
+This session focuses on building a structured backend application using **Node.js** and **Express.js**, with API routes organized into a dedicated folder structure.
+
+The assignment introduces scalable backend architecture by separating route logic, improving maintainability, and following REST API development practices.
+
+---
+
+##  Topics Covered
+- Node.js Backend Development
+- Express.js Framework
+- REST API Design
+- Route Management
+- API Folder Structure
+- Request Handling
+- Response Handling
+- API Testing
+- npm Package Management
+
+---
+
+##  Project Structure
+
+```bash
+session6_assignments/
+│── API/
+│── package-lock.json
+│── package.json
+│── req.http
+│── server.js
+```
+
+---
+
+##  Folder Explanation
+
+### `API/`
+Contains:
+- API route files
+- Request handlers
+- Business logic
+- Organized backend modules
+
+Purpose:
+- Keeps code modular
+- Improves readability
+- Supports scalable backend development
+
+---
+
+##  File Explanation
+
+### `server.js`
+Main backend server file.
+
+Features:
+- Creates Express application
+- Connects API routes
+- Starts server
+- Handles middleware setup
+
+---
+
+### `package.json`
+Contains:
+- Project metadata
+- Dependencies
+- npm scripts
+- Version information
+
+---
+
+### `package-lock.json`
+- Locks dependency versions
+- Ensures consistent installation
+
+---
+
+### `req.http`
+Used for:
+- API testing
+- Sending GET / POST / PUT / DELETE requests
+- Debugging backend responses
+
+---
+
+##  Technologies Used
+- JavaScript (ES6)
+- Node.js
+- Express.js
+- npm
+- VS Code
+- Git & GitHub
+
+---
+
+##  Installation
+
+Clone repository:
+
+```bash
+git clone https://github.com/NITESHSA1/ATP_24EG106A21.git
+```
+
+Move into folder:
+
+```bash
+cd session6_assignments
+```
+
+Install packages:
+
+```bash
+npm install
+```
+
+Run server:
+
+```bash
+node server.js
+```
+
+or
+
+```bash
+npm start
+```
+
+---
+
+##  API Example
+
+Example endpoint:
+
+```http
+GET /api
+```
+
+Response:
+
+```json
+{
+  "message": "API Working Successfully"
+}
+```
+
+---
+
+##  Learning Outcomes
+
+Through this assignment, I learned:
+
+ Building REST APIs  
+ Organizing API routes  
+ Using Express middleware  
+ Handling client requests  
+ Sending JSON responses  
+ Testing APIs using req.http  
+ Writing scalable backend code structure
+
+---
+
+## Author
+**Nitesh**  
+GitHub: https://github.com/NITESHSA1
+
+---
+
+## ⭐] Project Goal
+To build scalable backend APIs using structured Node.js and Express.js architecture for future full-stack applications.

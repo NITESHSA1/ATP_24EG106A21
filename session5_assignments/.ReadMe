@@ -1,0 +1,161 @@
+# Session 5 Assignments – Node.js Backend Development
+
+##  Overview
+This session focuses on building a backend application using **Node.js** and **Express.js**.  
+The project introduces server creation, routing, package management, and API testing.
+
+This assignment marks the transition from JavaScript fundamentals to backend application development.
+
+---
+
+##  Topics Covered
+- Node.js Basics
+- Express.js Server
+- REST API Fundamentals
+- HTTP Methods
+- Request & Response Handling
+- Package Management (npm)
+- API Testing using HTTP Client
+- Backend Project Structure
+
+---
+
+##  Project Structure
+
+```bash
+session5_assignments/
+│── node_modules/
+│── package-lock.json
+│── package.json
+│── req.http
+│── server.js
+```
+
+### File Description
+
+### 1. `server.js`
+Main backend server file.
+
+Features:
+- Creates Express server
+- Defines routes
+- Handles requests and responses
+- Runs application on localhost
+
+---
+
+### 2. `package.json`
+Contains:
+- Project metadata
+- Installed dependencies
+- npm scripts
+- Version control information
+
+---
+
+### 3. `package-lock.json`
+- Dependency tree lock file
+- Maintains consistent package installation
+
+---
+
+### 4. `req.http`
+Used for:
+- Testing APIs
+- Sending HTTP requests
+- Checking API responses
+- Backend debugging
+
+---
+
+### 5. `node_modules/`
+Contains installed npm packages.
+
+Examples:
+- Express
+- Middleware packages
+- Supporting libraries
+
+---
+
+##  Technologies Used
+- JavaScript (ES6)
+- Node.js
+- Express.js
+- npm
+- VS Code
+- Git & GitHub
+
+---
+
+##  Installation
+
+Clone repository:
+
+```bash
+git clone https://github.com/NITESHSA1/ATP_24EG106A21.git
+```
+
+Move into folder:
+
+```bash
+cd session5_assignments
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run server:
+
+```bash
+node server.js
+```
+
+or
+
+```bash
+npm start
+```
+
+---
+
+##  Example API
+
+```http
+GET /api
+```
+
+Response:
+
+```json
+{
+  "message": "Server Running Successfully"
+}
+```
+
+---
+
+## Learning Outcomes
+
+Through this assignment, I learned:
+
+Setting up Node.js project  
+Installing packages using npm  
+Creating Express server  
+Handling routes  
+Working with request/response cycle  
+Testing APIs using req.http  
+Organizing backend project files
+
+---
+
+##  Author
+**Nitesh**  
+GitHub: https://github.com/NITESHSA1
+
+---
+##  Project Goal
+To understand backend fundamentals and build a strong foundation for full-stack web development using Node.js and Express.js.

@@ -1,52 +1,40 @@
-/* h1, h4{
-    color: aquamarine;
-    font-size: 30px;
-    text-align: center;
-
-}
-img{
-    display: block;
-    margin: auto;
+/* Sets the background color of the entire page to 'snow' (off-white) */
+html {
+    background: snow;
 }
 
-p 
-{
-    padding-left: 20px;
-    margin-left: 40px;
-}
-
-a{
-    text-decoration: none;
-} */
- body{
+/* Sets the background of the body area to 'wheat' and adds 40px of space around the outside */
+body {
     background: wheat;
     margin: 40px;
- }
- html{
-    background: snow;
- }
- h1, h4{
-    color: black;
-    font-size: 30px;
-    text-align: center;
-
-}
- h2{
-    color: red;
-    font-size: 25px;
-    text-align: left;
-    padding-left: 20px;
-
-}
-P{
-    color: black;
-    font-size: 20px;
-    text-align: left;
-    padding-left: 20px;
 }
 
-img{
-    display: block;
-    margin: auto;
-    padding-top: 20px;
+/* Selects both main headers (h1) and smaller headers (h4) */
+h1, h4 {
+    color: black;          /* Sets the text color to black */
+    font-size: 30px;       /* Sets the text size to 30 pixels */
+    text-align: center;    /* Centers the text horizontally */
+}
+
+/* Selects all secondary headers (h2) */
+h2 {
+    color: red;            /* Sets the text color to red */
+    font-size: 25px;       /* Sets the text size to 25 pixels */
+    text-align: left;      /* Aligns the text to the left side */
+    padding-left: 20px;    /* Adds 20px of space inside the element on the left */
+}
+
+/* Selects all paragraph (p) tags */
+P {
+    color: black;          /* Sets the text color to black */
+    font-size: 20px;       /* Sets the text size to 20 pixels */
+    text-align: left;      /* Aligns the paragraph text to the left */
+    padding-left: 20px;    /* Adds 20px of space inside the paragraph on the left */
+}
+
+/* Selects all images (img) */
+img {
+    display: block;        /* Changes the image from inline to a block to allow centering */
+    margin: auto;          /* Combined with 'display: block', this centers the image horizontally */
+    padding-top: 20px;     /* Adds 20px of space above the image */
 }

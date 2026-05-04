@@ -1,0 +1,200 @@
+# Session 9 & 10 – Blog Application Backend
+
+##  Overview
+This project is a **Blog Application Backend** developed using **Node.js**, **Express.js**, and **MongoDB**. It provides API endpoints for managing blog content, handling middleware, and structuring backend logic in a scalable way.
+
+The application follows modular backend architecture, making it suitable for real-world full-stack integration.
+
+---
+
+##  Features
+- Create Blog Posts
+- Read All Posts
+- Read Single Post
+- Update Existing Post
+- Delete Post
+- Middleware-based request handling
+- Modular API routing
+- Database model structure
+- Server health monitoring
+
+---
+
+##  Project Structure
+
+```bash
+session9&10_blogapp/
+│── APIs/
+│── middlewares/
+│── models/
+│── ping/
+│── package-lock.json
+│── package.json
+│── server.js
+```
+
+---
+
+##  Folder Explanation
+
+### `APIs/`
+Contains:
+- Blog routes
+- CRUD request handlers
+- API business logic
+
+Example endpoints:
+- `GET /blogs`
+- `POST /blogs`
+- `PUT /blogs/:id`
+- `DELETE /blogs/:id`
+
+---
+
+### `middlewares/`
+Reusable middleware for:
+
+- Authentication
+- Validation
+- Logging
+- Error handling
+- Route protection
+
+---
+
+### `models/`
+Contains MongoDB models such as:
+
+### Blog Schema Example
+```js
+{
+  title: String,
+  content: String,
+  author: String,
+  category: String,
+  createdAt: Date
+}
+```
+
+Used for:
+- Data validation
+- Collection mapping
+- CRUD operations
+
+---
+
+### `ping/`
+Used for:
+- Health check endpoint
+- Server monitoring
+- API uptime verification
+
+Example:
+
+```http
+GET /ping
+```
+
+Response:
+
+```json
+{
+  "message": "Server is running"
+}
+```
+
+---
+
+## 🛠 Technologies Used
+- JavaScript (ES6)
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- Middleware
+- npm
+- VS Code
+- Git & GitHub
+
+---
+
+## ⚙ Installation
+
+Clone repository:
+
+```bash
+git clone https://github.com/NITESHSA1/ATP_24EG106A21.git
+```
+
+Move into folder:
+
+```bash
+cd session9&10_blogapp
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run server:
+
+```bash
+node server.js
+```
+
+or
+
+```bash
+npm start
+```
+
+---
+
+##  API Examples
+
+### Create Blog
+```http
+POST /blogs
+```
+
+### Get All Blogs
+```http
+GET /blogs
+```
+
+### Update Blog
+```http
+PUT /blogs/:id
+```
+
+### Delete Blog
+```http
+DELETE /blogs/:id
+```
+
+---
+
+##  Learning Outcomes
+
+Through this project, I learned:
+
+Designing REST APIs  
+Structuring backend projects professionally  
+Creating MongoDB models  
+Middleware implementation  
+Handling CRUD operations  
+Building scalable backend services  
+Server monitoring using ping routes  
+
+---
+
+##  Author
+**Nitesh**  
+GitHub: https://github.com/NITESHSA1
+
+---
+
+##  Project Goal
+To build a scalable backend for a blog platform using modern JavaScript backend technologies and best development practices.

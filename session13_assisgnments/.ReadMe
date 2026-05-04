@@ -1,0 +1,227 @@
+# Session 13 Assignments – Advanced Frontend Projects
+
+##  Overview
+This session focuses on **advanced frontend web development** using **HTML5** and **CSS3**, with multiple hands-on mini projects that improve UI design, page navigation, layouts, and asset management.
+
+The assignments include single-page layouts, multi-page city websites, styling practice, component design, and real-world webpage structuring.
+
+---
+
+##  Topics Covered
+- HTML5 Structure
+- CSS3 Styling
+- Multi-page Website Development
+- Navigation Design
+- Image Assets Management
+- Layout Design
+- Responsive UI Concepts
+- Component Styling
+- Portfolio-style Pages
+- Real-world Frontend Development
+
+---
+
+##  Project Structure
+
+```bash
+session13_assignments/
+│── project-1/
+│   │── index.html
+│   │── style.css
+│
+│── project-2 (Assignment - 1)/
+│   │── assets/
+│   │   │── bangalore1.jpg
+│   │   │── bangalore2.jpg
+│   │   │── bangalore3.jpg
+│   │   │── chennai1.jpg
+│   │   │── chennai2.jpg
+│   │   │── chennai3.jpg
+│   │   │── hyderabad1.jpg
+│   │   │── hyderabad2.jpeg
+│   │   │── hyderabad3.jpg
+│   │── Task.md
+│   │── bangalore.html
+│   │── chennai.html
+│   │── cities.html
+│   │── hyderabad.html
+│   │── main.css
+│
+│── project-3 (Assignment - 2)/
+│   │── index.html
+│   │── style.css
+│
+│── project-4 (Assignment - 3)/
+│   │── index.html
+│   │── style.css
+│
+│── project-5/
+│   │── index.html
+│   │── style.css
+│
+│── project-6 (Assignment - 4)/
+│   │── part-1/
+│   │   │── images-2.jpeg
+│   │   │── index.html
+│   │   │── style.css
+│   │
+│   │── part-2 (Main Assignment 4.2)/
+│   │   │── github.png
+│   │   │── hyderabad2.jpeg
+│   │   │── linkedin.png
+│   │   │── index.html
+│   │   │── style.css
+│
+│── project-7 (Assignment - 5)/
+│   │── index.html
+│   │── style.css
+```
+
+---
+
+##  Project Highlights
+
+##  Project 1
+Focus:
+- Basic webpage structure
+- Layout design
+- CSS styling practice
+
+---
+
+##  Project 2 – City Website
+Files:
+- `cities.html`
+- `bangalore.html`
+- `chennai.html`
+- `hyderabad.html`
+
+Features:
+- Multi-page navigation
+- City showcase pages
+- Image galleries
+- Organized assets folder
+- Shared stylesheet (`main.css`)
+- Content organization
+
+Cities Covered:
+- Bangalore
+- Chennai
+- Hyderabad
+
+---
+
+##  Project 3 – Assignment 2
+Features:
+- HTML page design
+- CSS styling
+- Layout practice
+- UI refinement
+
+---
+
+##  Project 4 – Assignment 3
+Features:
+- Web component design
+- Page styling
+- Layout experimentation
+
+---
+
+##  Project 5
+Features:
+- UI building practice
+- Page styling improvements
+- Frontend component structure
+
+---
+
+##  Project 6 – Assignment 4
+
+### Part 1
+Features:
+- Image integration
+- Styled webpage
+- Layout creation
+
+### Part 2
+Features:
+- GitHub icon integration
+- LinkedIn icon integration
+- Profile / social card style design
+- Media-based UI development
+
+---
+
+##  Project 7 – Assignment 5
+Features:
+- Final layout practice
+- Styled webpage
+- Frontend design improvements
+
+---
+
+##  Technologies Used
+- HTML5
+- CSS3
+- Flexbox
+- Basic Responsive Design
+- Asset Management
+- VS Code
+- Git & GitHub
+
+---
+
+##  How to Run
+
+Clone repository:
+
+```bash
+git clone https://github.com/NITESHSA1/ATP_24EG106A21.git
+```
+
+Move into folder:
+
+```bash
+cd session13_assignments
+```
+
+Open any project:
+
+```bash
+index.html
+```
+
+Or use:
+
+```bash
+Live Server Extension
+```
+
+for real-time preview.
+
+---
+
+##  Learning Outcomes
+
+Through these assignments, I learned:
+
+ Building multi-page websites  
+ Managing assets folders  
+ Creating navigation links  
+ Styling complex layouts  
+ Organizing frontend projects  
+ Designing portfolio-like pages  
+ Working with images and icons  
+ Improving UI design skills
+
+---
+
+##  Author
+**Nitesh**  
+GitHub: https://github.com/NITESHSA1
+
+---
+
+##  Project Goal
+To strengthen frontend web development skills by building multiple structured HTML/CSS projects with real-world webpage design concepts.

@@ -23,11 +23,11 @@
                         
                         
                         
-                        ✅ Expected Output
+                        Expected Output
                               { name: "Ravi", city: "Hyderabad" }
                               { name: "Ravi", city: "Hyderabad", age: 25 }
                         
-                        👉 Original object should remain unchanged.*/
+                         Original object should remain unchanged.*/
                         let user = {
                                   name: "Ravi",
                                   city: "Hyderabad"

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Forms</h1>
+    <form action="post">
+        <div class="container-1">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="enter username"
+        autocomplete="off"
+        required
+        minlength="6"
+        maxlength="6"
+      />
+    </div>
+    <div class="container-2">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="enter password"
+        autocomplete="off"
+        required
+        minlength="6"
+        maxlength="6"
+      />
+    </div>
+    <!--  -->
+    <div class="feild">
+        <input type="checkbox" name="angular" id="angular">
+        <label for="angular">Angular</label>
+    </div>
+    <div class="feild">
+        <input type="checkbox" name="react" id="react">
+        <label for="react">React</label>
+    </div>
+    <!--  -->
+    <div class="feild">
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+    </div>
+    <div class="feild">
+        <input type="radio" name="gender" id="female">
+        <label for="famale">Female</label>
+    </div>
+    <!--  -->
+    <div class="feild">
+        <select name="state" id="">
+            <option value="telangana">Telangana</option>
+            <option value="andhra">Andhra Pradesh</option>
+            <option value="tamilnadu">Tamil Nadu</option>
+        </select>
+    </div>
+    <div class="feild">
+        <h2>FeedBack!</h2>
+        <input class="input-feed" type="text" name="miau" id="miau">
+        
+    </div>
+    <button type="submit">Login!</button>
+    </form>
+  </body>
+</html>

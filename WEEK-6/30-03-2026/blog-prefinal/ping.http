@@ -1,0 +1,15 @@
+### Get users
+GET http://localhost:6767/emp/employee
+
+### Create User
+PUT http://localhost:6767/emp/employee
+Content-Type: application/json
+
+{
+    "_id": "69cb889523a2f52bb968d3a9",
+    "name": "Meoww",
+    "email": "meow@gmail.com",
+    "mobile": 9289929387,
+    "designation": "super dev",
+    "companyName": "atlas"
+}
